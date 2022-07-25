@@ -1,0 +1,51 @@
+@use "../../styles/variables" as vars;
+
+.search {
+  position: relative;
+  margin-bottom: 50px;
+  &:before {
+    position: absolute;
+    bottom: -25px;
+    height: 1px;
+    width: 100%;
+    display: block;
+    content: "";
+    background: vars.$colour--secondary-gray;
+  }
+}
+
+.inputsContainer {
+  display: flex;
+  position: relative;
+}
+
+.inputFrom {
+  border-radius: 5px 0px 0px 5px;
+  > div {
+    border-radius: 5px 0px 0px 5px !important;
+  }
+}
+
+.inputTo {
+  > label {
+    left: 5px;
+  }
+}
+
+.switcherContainer {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 42px !important;
+  height: 42px !important;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.switcherIcon {
+  width: 42px !important;
+  height: 42px !important;
+}

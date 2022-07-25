@@ -1,9 +1,13 @@
-import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
+import ticketCardsReducer from "./components/ticket-card/ticketCardsSlice";
+import counterReducer from "../features/counter/counterSlice";
+import companiesReducer from "./components/ticket-card/companiesSlice";
 
 export const store = configureStore({
   reducer: {
+    ticketCards: ticketCardsReducer,
     counter: counterReducer,
+    companies: companiesReducer,
   },
 });
 

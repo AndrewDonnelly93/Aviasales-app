@@ -6,19 +6,18 @@ import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 // Styles
 import styles from "./TicketCard.module.scss";
-import Stops from "../StopsFilters";
+// Utils
+import { formatTime } from "../../utils/utils";
 
 export interface ITicketCard {
-  company: string;
-  icon: string;
-  price: string;
+  companyName: string;
+  price: number;
   departure: string;
   destination: string;
-  departureTime: string;
-  arrivalTime: string;
-  travelTime: string;
+  departureTime: number;
+  arrivalTime: number;
+  travelTime: number;
   stops: string | string[] | [];
-  companyCode: string;
 }
 
 const renderStops = (stops: string | string[] | []) => {
@@ -67,8 +66,6 @@ const renderStops = (stops: string | string[] | []) => {
 };
 
 const TicketCard: React.FC<ITicketCard> = ({
-  company,
-  icon,
   price,
   departure,
   destination,
@@ -76,7 +73,7 @@ const TicketCard: React.FC<ITicketCard> = ({
   arrivalTime,
   travelTime,
   stops,
-  companyCode,
+  companyName,
 }) => {
   return (
     <Card className={styles.ticketCard}>
@@ -85,8 +82,8 @@ const TicketCard: React.FC<ITicketCard> = ({
           {price} €
         </Typography>
         <img
-          src={`../companies/${companyCode}.png`}
-          alt={company}
+          src={`../companies/${companyName}.png`}
+          alt={companyName}
           className={styles.companyLogo}
         />
       </Box>
@@ -96,7 +93,8 @@ const TicketCard: React.FC<ITicketCard> = ({
             {departure} — {destination}
           </Typography>
           <Typography component="h3" variant="h3">
-            {departureTime} — {arrivalTime}
+            {formatTime(departureTime, "numeric")} —{" "}
+            {formatTime(arrivalTime, "numeric")}
           </Typography>
         </Grid>
         <Grid item className={styles.travelTime} xs={4}>
@@ -104,7 +102,7 @@ const TicketCard: React.FC<ITicketCard> = ({
             Travel Time
           </Typography>
           <Typography component="h3" variant="h3">
-            {travelTime}
+            {formatTime(travelTime)}
           </Typography>
         </Grid>
         {renderStops(stops)}

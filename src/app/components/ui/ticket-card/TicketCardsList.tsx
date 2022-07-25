@@ -78,7 +78,7 @@ const TicketCardsList: React.FC = () => {
       // @ts-ignore
       dispatch(fetchTicketCards());
     }
-  }, [ticketCardsStatus, dispatch]);
+  }, [ticketCardsStatus, ticketCardsError, dispatch]);
 
   // Fetching companies
   useEffect(() => {
@@ -86,7 +86,7 @@ const TicketCardsList: React.FC = () => {
       // @ts-ignore
       dispatch(fetchCompanies());
     }
-  }, [companiesStatus, dispatch]);
+  }, [companiesStatus, ticketCardsError, dispatch]);
 
   // Loading
   if (
@@ -103,10 +103,11 @@ const TicketCardsList: React.FC = () => {
     return <Box>{renderTicketCards(ticketCards, companies)}</Box>;
 
     // Error while fetching
-  } else if (ticketCardsStatus === TicketCardsStatus.FAILED) {
-    <ErrorAlert errorMessage={ticketCardsError} />;
-  } else if (companiesStatus === CompaniesStatus.FAILED) {
-    <ErrorAlert errorMessage={companiesError} />;
+  } else if (ticketCardsError.length > 0) {
+    return <ErrorAlert errorMessage={ticketCardsError} />;
+
+  } else if (companiesError.length > 0) {
+     return <ErrorAlert errorMessage={companiesError} />;
   }
 };
 

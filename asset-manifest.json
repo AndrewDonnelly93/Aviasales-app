@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Aviasales-app/static/css/main.b378d586.css",
-    "main.js": "/Aviasales-app/static/js/main.e414e46b.js",
+    "main.js": "/Aviasales-app/static/js/main.5b330275.js",
     "static/media/logo.svg": "/Aviasales-app/static/media/logo.e26ec8af4931c7f01d6b7641defc8254.svg",
     "index.html": "/Aviasales-app/index.html",
     "static/media/switcher.svg": "/Aviasales-app/static/media/switcher.997fd2fce91b7f6d519f3e13a040beff.svg",
@@ -11,10 +11,10 @@
     "static/media/checkbox.svg": "/Aviasales-app/static/media/checkbox.ad129cbfffeae07a4acbb4ac43648f80.svg",
     "static/media/radiobutton.svg": "/Aviasales-app/static/media/radiobutton.c2e123e197db1d083d1e6a50cd92c3d4.svg",
     "main.b378d586.css.map": "/Aviasales-app/static/css/main.b378d586.css.map",
-    "main.e414e46b.js.map": "/Aviasales-app/static/js/main.e414e46b.js.map"
+    "main.5b330275.js.map": "/Aviasales-app/static/js/main.5b330275.js.map"
   },
   "entrypoints": [
     "static/css/main.b378d586.css",
-    "static/js/main.e414e46b.js"
+    "static/js/main.5b330275.js"
   ]
 }

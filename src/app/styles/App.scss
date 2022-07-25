@@ -1,13 +1,5 @@
 @use "./variables" as vars;
 
-body {
-  background: vars.$colour--light-gray !important;
-  padding-top: 7px;
-  padding-bottom: 17px;
-  min-height: 100vh;
-  font-family: "Open Sans", sans-serif !important;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -16,3 +8,11 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+body {
+  background: vars.$colour--lightest-blue;
+  padding-top: 7px;
+  padding-bottom: 17px;
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  min-width: vars.$container-width;
+}

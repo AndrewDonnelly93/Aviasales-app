@@ -1,0 +1,12 @@
+@use "../../../styles/variables" as vars;
+
+.error {
+  width: 100%;
+  border: 1px solid vars.$colour--red;
+  background: vars.$color--lightest-gray;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 15px;
+  color: vars.$colour--red;
+  font-size: 14px;
+}

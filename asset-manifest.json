@@ -1,8 +1,7 @@
 {
   "files": {
-    "main.css": "/Aviasales-app/static/css/main.ead294ad.css",
-    "main.js": "/Aviasales-app/static/js/main.c1c342ac.js",
-    "static/js/787.28cb0dcd.chunk.js": "/Aviasales-app/static/js/787.28cb0dcd.chunk.js",
+    "main.css": "/Aviasales-app/static/css/main.b378d586.css",
+    "main.js": "/Aviasales-app/static/js/main.e414e46b.js",
     "static/media/logo.svg": "/Aviasales-app/static/media/logo.e26ec8af4931c7f01d6b7641defc8254.svg",
     "index.html": "/Aviasales-app/index.html",
     "static/media/switcher.svg": "/Aviasales-app/static/media/switcher.997fd2fce91b7f6d519f3e13a040beff.svg",
@@ -11,12 +10,11 @@
     "static/media/radiobutton-checked.svg": "/Aviasales-app/static/media/radiobutton-checked.29e22cb8f6b9e333633de0297c04a81a.svg",
     "static/media/checkbox.svg": "/Aviasales-app/static/media/checkbox.ad129cbfffeae07a4acbb4ac43648f80.svg",
     "static/media/radiobutton.svg": "/Aviasales-app/static/media/radiobutton.c2e123e197db1d083d1e6a50cd92c3d4.svg",
-    "main.ead294ad.css.map": "/Aviasales-app/static/css/main.ead294ad.css.map",
-    "main.c1c342ac.js.map": "/Aviasales-app/static/js/main.c1c342ac.js.map",
-    "787.28cb0dcd.chunk.js.map": "/Aviasales-app/static/js/787.28cb0dcd.chunk.js.map"
+    "main.b378d586.css.map": "/Aviasales-app/static/css/main.b378d586.css.map",
+    "main.e414e46b.js.map": "/Aviasales-app/static/js/main.e414e46b.js.map"
   },
   "entrypoints": [
-    "static/css/main.ead294ad.css",
-    "static/js/main.c1c342ac.js"
+    "static/css/main.b378d586.css",
+    "static/js/main.e414e46b.js"
   ]
 }

@@ -1,0 +1,63 @@
+@use "../../styles/variables" as vars;
+
+.ticketCard {
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background: vars.$colour--white;
+  margin-bottom: 20px;
+  h3 {
+    font-weight: 600;
+    font-size: 24px;
+    color: vars.$colour--blue;
+  }
+}
+
+.priceLogo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.companyLogo {
+  width: 110px;
+  height: 36px;
+}
+
+.flightInfo {
+  text-align: left;
+  > div {
+    width: 140px;
+  }
+  h2 {
+    font-size: 12px;
+    font-weight: 600;
+    color: vars.$colour--middle-gray;
+    text-transform: uppercase;
+    line-height: 18px;
+  }
+  h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: vars.$colour--gray;
+    line-height: 21px;
+    text-transform: uppercase;
+  }
+}
+
+.airports,
+.travelTime,
+.stops {
+  display: flex;
+  flex-direction: column !important;
+  justify-content: flex-start;
+  align-content: space-between;
+}
+
+.noStops {
+  display: flex;
+  flex-direction: column !important;
+  justify-content: center;
+}

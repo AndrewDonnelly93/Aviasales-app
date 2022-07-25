@@ -1,0 +1,18 @@
+@use "./variables" as vars;
+
+body {
+  background: vars.$colour--light-gray !important;
+  padding-top: 7px;
+  padding-bottom: 17px;
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+

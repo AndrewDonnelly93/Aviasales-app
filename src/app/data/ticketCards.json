@@ -1,0 +1,74 @@
+[
+  {
+    "company": "S7 Airlines",
+    "companyCode": "s7",
+    "icon": "s7.png",
+    "price": "90",
+    "departure": "LTN",
+    "destination": "LIS",
+    "departureTime": "18:30",
+    "arrivalTime": "21:30",
+    "travelTime": "3h",
+    "stops": []
+  },
+  {
+    "company": "XiamenAir",
+    "icon": "xiamer-air.png",
+    "companyCode": "xiamen-air",
+    "price": "80",
+    "departure": "STN",
+    "destination": "LIS",
+    "departureTime": "14:30",
+    "arrivalTime": "19:15",
+    "travelTime": "4h 45m",
+    "stops": ["GTW", "EDI"]
+  },
+  {
+    "company": "American Airlines",
+    "companyCode": "aa",
+    "icon": "american-airlines.png",
+    "price": "150",
+    "departure": "LCY",
+    "destination": "SEN",
+    "departureTime": "10:30",
+    "arrivalTime": "13:45",
+    "travelTime": "3h 15m",
+    "stops": ["GLA"]
+  },
+  {
+    "company": "Carribean Airlines",
+    "companyCode": "ca",
+    "icon": "carribean-airlines.png",
+    "price": "150",
+    "departure": "LBA",
+    "destination": "BFS",
+    "departureTime": "12:30",
+    "arrivalTime": "14:50",
+    "travelTime": "2h 20m",
+    "stops": ["CWL", "ABZ"]
+  },
+  {
+    "company": "Emirates",
+    "companyCode": "emirates",
+    "icon": "emirates.png",
+    "price": "170",
+    "departure": "JER",
+    "destination": "BHX",
+    "departureTime": "11:30",
+    "arrivalTime": "13:00",
+    "travelTime": "1h 30m",
+    "stops": []
+  },
+  {
+    "company": "KLM",
+    "companyCode": "klm",
+    "icon": "klm.png",
+    "price": "120",
+    "departure": "DSA",
+    "destination": "BRS",
+    "departureTime": "15:30",
+    "arrivalTime": "17:55",
+    "travelTime": "2h 25m",
+    "stops": ["EMA"]
+  }
+]

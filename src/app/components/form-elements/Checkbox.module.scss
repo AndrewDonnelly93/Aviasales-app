@@ -1,0 +1,20 @@
+@use "../../styles/variables" as vars;
+@import "./FormElements.module.scss";
+
+.checkbox {
+  color: transparent !important;
+  border-radius: 2px;
+  padding: 0 !important;
+  margin-right: 5px !important;
+}
+
+.formLabel {
+  &:hover {
+    background: vars.$colour--light-blue !important;
+    .checkbox {
+      rect {
+        stroke: vars.$colour--blue !important;
+      }
+    }
+  }
+}

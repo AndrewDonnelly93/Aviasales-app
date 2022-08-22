@@ -1,6 +1,7 @@
-@import "variables.scss";
+@use "./variables" as vars;
 
-:export {
-    colourPrimary: $colour--white;
-    colourSecondary: $colour--gray;
+.container {
+  width: vars.$container-width !important;
+  padding: 0 !important;
+  max-width: vars.$container-width !important;
 }

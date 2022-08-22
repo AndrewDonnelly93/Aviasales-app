@@ -2,16 +2,14 @@ import React from "react";
 // Components
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
-import Stops from "../components/StopsFilters";
-import CompaniesFilters from "../components/CompaniesFilters";
-import Filters from "../components/filters/Filters";
-import Loader from "../components/loader/Loader";
-import TicketCardsList from "../components/ticket-card/TicketCardsList";
-import Search from "../components/search/Search";
+import Stops from "../components/ui/filters/StopsFilters";
+import CompaniesFilters from "../components/ui/filters/CompaniesFilters";
+import Filters from "../components/ui/filters/Filters";
+import Loader from "../components/shared/loader/Loader";
+import TicketCardsList from "../components/ui/ticket-card/TicketCardsList";
+import Search from "../components/ui/search/Search";
 // Styles
 import "../styles/App.scss";
-// Data
-import ticketCards from "../data/ticketCards.json";
 
 const Home: React.FC = () => {
   return (

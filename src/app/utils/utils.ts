@@ -1,3 +1,4 @@
+// For converting time
 export const formatTime = (unixTimestamp: number, format?: string) => {
   const date = new Date(unixTimestamp * 1000);
   const hours = date.getHours();
@@ -7,4 +8,22 @@ export const formatTime = (unixTimestamp: number, format?: string) => {
     return `${hours}:${formattedMinutes}`;
   }
   return `${hours}h ${formattedMinutes}`;
+};
+
+// For formatting prices
+export const currencyFormatter = (
+  price: number,
+  locale: string,
+  currency: string
+) => {
+  const formattedPrice = new Intl.NumberFormat(`${locale}`, {
+    style: "currency",
+    currency,
+    currencyDisplay: "symbol",
+    signDisplay: "never",
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 0,
+  });
+
+  return formattedPrice.format(price);
 };

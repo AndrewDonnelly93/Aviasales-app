@@ -1,0 +1,35 @@
+@use "../../../styles/variables" as vars;
+
+.textField {
+  position: relative;
+  background: vars.$colour--white;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  height: 60px;
+  line-height: 60px;
+  input {
+    z-index: 1;
+  }
+  > div {
+    border-radius: 0 !important;
+    height: 60px;
+    line-height: 60px;
+    &:hover,
+    &:active {
+      > fieldset {
+        background: vars.$colour--light-blue;
+        border-color: vars.$colour--blue !important;
+      }
+    }
+    &:focus {
+      > fieldset {
+        border-color: vars.$colour--blue !important;
+      }
+    }
+  }
+  > label {
+    top: 3px;
+    color: vars.$colour--another-gray !important;
+    font-size: 15px;
+    font-weight: 400;
+  }
+}

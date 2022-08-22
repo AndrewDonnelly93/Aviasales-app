@@ -1,12 +1,10 @@
 import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
-import ticketCardsReducer from "./components/ticket-card/ticketCardsSlice";
-import counterReducer from "../features/counter/counterSlice";
-import companiesReducer from "./components/ticket-card/companiesSlice";
+import ticketCardsReducer from "./stores/ticketCardsSlice";
+import companiesReducer from "./stores/companiesSlice";
 
 export const store = configureStore({
   reducer: {
     ticketCards: ticketCardsReducer,
-    counter: counterReducer,
     companies: companiesReducer,
   },
 });

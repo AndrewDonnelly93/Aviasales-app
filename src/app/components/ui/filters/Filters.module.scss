@@ -1,0 +1,44 @@
+@use "../../../styles/variables" as vars;
+
+.filters {
+  margin-bottom: 20px;
+}
+
+.filterBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background: vars.$colour--white;
+  border: 1px solid vars.$color--lightest-gray;
+  border-radius: 2px;
+  h3 {
+    text-align: center;
+    text-transform: uppercase;
+    color: vars.$colour--gray;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  &:hover {
+    cursor: pointer;
+    background: vars.$colour--light-blue;
+  }
+  &:nth-child(1) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 0;
+  }
+  &:nth-child(3) {
+    border-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  &.filterActive {
+    background: vars.$colour--blue;
+    border-color: vars.$colour--blue;
+    color: vars.$colour--white;
+    &:hover {
+      cursor: default;
+    }
+  }
+}
